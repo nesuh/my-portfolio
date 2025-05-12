@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* Root variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Dark mode specific styling */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Apply variables based on the dark mode */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark body {
+  background-color: #121212; /* Dark background for the body */
+  color: #ffffff; /* White text in dark mode */
+}
+.dark .navbar {
+  background-color: #0a0a0a; /* Dark background for the navbar */
+  color: #ffffff; /* White text in dark mode */
+}
+.dark .navbar a {
+  color: #ffffff; /* White text in dark mode */
+}
+.dark .navbar a:hover {
+  color: #ffffff; /* White text in dark mode */
+}
+.dark footer {
+  background-color: #0a0a0a; /* Dark background for the footer */
+  color: #ffffff; /* White text in dark mode */
+}
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #ffffff; /* White text in dark mode */
+}
+
+.dark .navbar a.active {
+  color: #ffffff; /* White text in dark mode */
+}
+.dark .navbar a.active:hover {
+  color: #ffffff; /* White text in dark mode */
+}
+.dark a {
+  color: #ffffff; /* White text in dark mode */
+}
+a:hover {
+  text-decoration: underline;
+}
+.dark p {
+  color: #ffffff; /* White text in dark mode */
+}
+.dark code {
+  background-color: #121212; /* Dark background for code blocks */
+  color: #ffffff; /* White text in dark mode */
+}
+.dark pre {
+  background-color: #121212; /* Dark background for code blocks */
+  color: #ffffff; /* White text in dark mode */
+}
+.dark blockquote {
+  background-color: #121212; /* Dark background for blockquotes */
+  color: #ffffff; /* White text in dark mode */
+}
+
+.dark input[type="text"],
+.dark input[type="email"],
+.dark input[type="password"],
+.dark textarea {
+  background-color: #121212; /* Dark background for input fields */
+  color: #ffffff; /* White text in dark mode */
+}
+.dark .btn {
+  background-color: #ffffff; /* White background for buttons */
+  color: #121212; /* Dark text for buttons */
+}
+.dark .btn:hover {
+  background-color: #ffffff; /* White background for buttons */
+  color: #121212; /* Dark text for buttons */
+}
+.dark .Link {
+  color: #ffffff; /* White text for links */
+}
+html {
+  @apply bg-white text-black transition-colors duration-300; /* Default light mode styles */
+}
+
+html.dark {
+  @apply bg-gray-900 text-white; /* Dark mode styles */
+}
