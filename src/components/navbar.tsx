@@ -28,8 +28,8 @@ export default function Navbar() {
           <Image
             src="/assets/my-logo.png"
             alt="Antenhe Logo"
-            width={40}
-            height={40}
+            width={100}
+            height={100}
             className="rounded-md"
           />
           <span className="text-lg font-bold text-[#0B1DE6]">Antenhe</span>

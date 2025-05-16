@@ -59,8 +59,8 @@ export default function Home() {
           <div className="relative w-full rounded-2xl overflow-hidden shadow-xl transform transition duration-500 group hover:rotate-1 hover:scale-105 hover:shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-tr from-[#0B1DE6]/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 rounded-2xl z-10"></div>
             <Image
-              src="/images/anta.png"
-              alt="Antenhe Silessji"
+              src="/assets/anta.jpg"
+              alt="Antenhe Sileshi"
               width={300}
               height={300}
               className="rounded-2xl object-cover w-full h-auto"
