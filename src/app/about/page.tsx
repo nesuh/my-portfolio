@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { 
-  FaServer, FaRobot, FaFigma, FaReact, FaPython, FaDocker, FaGithub, FaServer as FaCiCd 
+  FaServer, FaRobot, FaFigma, FaReact, FaPython, FaDocker, FaGithub
 } from "react-icons/fa";
 import { 
   SiNestjs, SiPostgresql, SiTailwindcss, SiOpenai, SiTensorflow, SiTypescript, SiJavascript, SiGit 
