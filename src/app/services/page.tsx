@@ -1,105 +1,97 @@
-import ServiceCard from "@/components/service-card";
+import { FiDatabase, FiLock, FiBox, FiLayers } from 'react-icons/fi'; // backend icons example
+import { FaReact, FaFigma, FaPuzzlePiece, FaRobot, FaUserShield } from 'react-icons/fa';
+import { MdOutlineIntegrationInstructions, MdSecurity } from 'react-icons/md';
+import ServiceCard from '@/components/service-card';
 
 export default function Services() {
   return (
-    <section>
+    <section id="services" className="max-w-7xl mx-auto px-4 py-12">
       <h1 className="text-6xl font-bold mb-10 text-[#5567C2] text-center">Services</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <ServiceCard
-          icon={<img src="/images/icons8-backend-50.png" alt="Backend" className="w-10 h-10" />}
+          icon={<FiBox size={40} className="text-[#5567C2]" />}
           title="Backend Development (Main Expertise)"
           details={[
             {
-              icon: <img src="/images/icons8-api-50.png" alt="API" className="w-5 h-5" />,
+              icon: <MdOutlineIntegrationInstructions size={20} className="text-[#5567C2]" />,
               description:
-                "Design and development of robust RESTful APIs using NestJS, Express, TypeScript, and Python.",
+                'Design and development of robust RESTful APIs using NestJS, Express, TypeScript, and Python.',
             },
             {
-              icon: <img src="/images/icons8-database-50.png" alt="Database" className="w-5 h-5" />,
-              description:
-                "Database design and management with PostgreSQL and MongoDB.",
+              icon: <FiDatabase size={20} className="text-[#5567C2]" />,
+              description: 'Database design and management with PostgreSQL and MongoDB.',
             },
-              {
-              icon: <img src="/images/icons8-puzzle-50.png" alt="Integration" className="w-5 h-5" />,
-              description:
-                "Integration with third-party services (email, payment, notifications, etc.)",
+            {
+              icon: <FaPuzzlePiece size={20} className="text-[#5567C2]" />,
+              description: 'Integration with third-party services (email, payment, notifications, etc.)',
             },
-              {
-              icon: <img src="/images/icons8-lock-50.png" alt="Database" className="w-5 h-5" />,
-              description:
-                "Authentication & authorization (JWT, OAuth2)",
+            {
+              icon: <FiLock size={20} className="text-[#5567C2]" />,
+              description: 'Authentication & authorization (JWT, OAuth2)',
             },
-              {
-              icon: <img src="/images/icons8-architecture-50.png" alt="Database" className="w-5 h-5" />,
-              description:
-                "Clean architecture, multi-tenancy, and modular codebase",
+            {
+              icon: <FiLayers size={20} className="text-[#5567C2]" />,
+              description: 'Clean architecture, multi-tenancy, and modular codebase',
             },
           ]}
           detailLink="/services/backend-development"
         />
 
         <ServiceCard
-          icon={<img src="/images/icons8-frontend-50.png" alt="Web Dev" className="w-10 h-10" />}
+          icon={<FaReact size={40} className="text-[#5567C2]" />}
           title="Frontend Development"
           details={[
             {
-              icon: <img src="/images/icons8-api-50.png" alt="API" className="w-5 h-5" />,
-              description:
-                "Building responsive web interfaces using React, Tailwind CSS, and HTML/CSS",
+              icon: <FaReact size={20} className="text-[#5567C2]" />,
+              description: 'Building responsive web interfaces using React, Tailwind CSS, and HTML/CSS',
             },
             {
-              icon: <img src="/images/icons8-api-50.png" alt="API" className="w-5 h-5" />,
-              description:
-                "Integration with backend APIs",
+              icon: <MdOutlineIntegrationInstructions size={20} className="text-[#5567C2]" />,
+              description: 'Integration with backend APIs',
             },
-                {
-              icon: <img src="/images/icons8-api-50.png" alt="API" className="w-5 h-5" />,
-              description:
-                "SPA (Single Page Application) development with React + Vite",
+            {
+              icon: <FaReact size={20} className="text-[#5567C2]" />,
+              description: 'SPA (Single Page Application) development with React + Vite',
             },
           ]}
           detailLink="/services/frontend-development"
         />
-          <ServiceCard
-          icon={<img src="/images/icons8-machine-learning-50.png" alt="AI & Machine Learning" className="w-10 h-10" />}
+
+        <ServiceCard
+          icon={<FaRobot size={40} className="text-[#5567C2]" />}
           title="AI & Machine Learning (Practical Experience)"
           details={[
             {
-              icon: <img src="/images/icons8-api-50.png" alt="API" className="w-5 h-5" />,
-              description:
-                "Certified in Machine Learning and Deep Learning from Coursera",
+              icon: <FaUserShield size={20} className="text-[#5567C2]" />,
+              description: 'Certified in Machine Learning and Deep Learning from Coursera',
             },
             {
-              icon: <img src="/images/icons8-api-50.png" alt="API" className="w-5 h-5" />,
-              description:
-                "Built small AI-powered applications using OpenAI API (e.g., GPT-3/4 based tools)",
+              icon: <FaRobot size={20} className="text-[#5567C2]" />,
+              description: 'Built small AI-powered apps using OpenAI API (e.g., GPT-3/4 based tools)',
             },
-              {
-              icon: <img src="/images/icons8-api-50.png" alt="API" className="w-5 h-5" />,
-              description:
-                "Practical experience in prompt engineering and integrating AI with backend systems",
+            {
+              icon: <MdSecurity size={20} className="text-[#5567C2]" />,
+              description: 'Prompt engineering and AI + backend integration',
             },
           ]}
           detailLink="/services/ai-machine-learning"
         />
+
         <ServiceCard
-          icon={<img src="/images/icons8-ui-ux-design-50.png" alt="UI/UX Design" className="w-10 h-10" />}
-          title=" UI/UX Design"
+          icon={<FaFigma size={40} className="text-[#5567C2]" />}
+          title="UI/UX Design"
           details={[
             {
-              icon: <img src="/images/icons8-api-50.png" alt="API" className="w-5 h-5" />,
-              description:
-                "Creating modern and intuitive user interfaces with Figma",
+              icon: <FaFigma size={20} className="text-[#5567C2]" />,
+              description: 'Creating modern and intuitive user interfaces with Figma',
             },
             {
-             icon: <img src="/images/icons8-api-50.png" alt="API" className="w-5 h-5" />,
-              description:
-                "Wireframing and prototyping for web and mobile applications",
+              icon: <FiBox size={20} className="text-[#5567C2]" />,
+              description: 'Wireframing and prototyping for web and mobile apps',
             },
-              {
-             icon: <img src="/images/icons8-api-50.png" alt="API" className="w-5 h-5" />,
-              description:
-                "Focused on usability and clean design systems",
+            {
+              icon: <FaPuzzlePiece size={20} className="text-[#5567C2]" />,
+              description: 'Focused on usability and clean design systems',
             },
           ]}
           detailLink="/services/ui-ux-design"

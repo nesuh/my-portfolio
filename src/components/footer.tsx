@@ -1,3 +1,11 @@
+import {
+  FaLinkedin,
+  FaGithub,
+  FaFacebook,
+  FaInstagram,
+  FaEnvelope,
+} from 'react-icons/fa';
+
 export default function Footer() {
   return (
     <footer className="bg-[#5567C2] text-white py-6 px-6 mt-16">
@@ -22,37 +30,37 @@ export default function Footer() {
           </ul>
         </div>
 
+        {/* Social Media Links */}
         <div>
-  <h3 className="text-lg font-semibold mb-4">Connect</h3>
-  <ul className="flex flex-wrap items-center gap-4 text-sm ">
-    <li className="hover:bg-white rounded-full w-8 h-8  ransition-colors duration-300">
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-        <img src="images/icons8-linkedin-48.png" alt="LinkedIn" className="w-8 h-8" />
-      </a>
-    </li>
-    <li className="hover:bg-white rounded-full w-8 h-8  ransition-colors duration-300">
-      <a href="https://github.com/nesuh" target="_blank" rel="noopener noreferrer">
-        <img src="images/icons8-github-48.png" alt="GitHub" className="w-8 h-8" />
-      </a>
-    </li>
-    <li className="hover:bg-white rounded-full w-8 h-8  ransition-colors duration-300">
-      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-        <img src="images/icons8-facebook-logo-48.png" alt="Facebook" className="w-8 h-8" />
-      </a>
-    </li>
-    <li className="hover:bg-white rounded-full w-8 h-8  ransition-colors duration-300">
-      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-        <img src="images/icons8-instagram-logo-48.png" alt="Instagram" className="w-8 h-8" />
-      </a>
-    </li>
-    <li>
-      <a href="mailto:antenhesileshi@gmail.com" className="hover:underline text-white ">
-        Email Me
-      </a>
-    </li>
-  </ul>
-</div>
-
+          <h3 className="text-lg font-semibold mb-4">Connect</h3>
+          <ul className="flex flex-wrap items-center gap-4 text-xl">
+            <li>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                <FaLinkedin />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/nesuh" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                <FaGithub />
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                <FaFacebook />
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                <FaInstagram />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:antenhesileshi@gmail.com" className="hover:text-gray-300">
+                <FaEnvelope />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       {/* Footer Bottom */}

@@ -68,6 +68,15 @@ export default function Home() {
           </div>
         </div>
       </div>
+<div className="mt-6">
+  <a
+    href="/certificates/resume.pdf"
+    download
+    className="inline-block px-5 py-3 bg-[#0B1DE6] text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition"
+  >
+    📄 Download My Resume
+  </a>
+</div>
 
       {/* 🧠 ChatBot */}
       <div data-aos="fade-up" className="mt-16">

@@ -1,5 +1,4 @@
-// If this is not what you meant, use `next/link` instead
-// import Link from "next/link"; // Uncomment if using Next.js Link
+import { FaInfoCircle } from "react-icons/fa"; // Add this import
 
 type ServiceDetail = {
   icon: React.ReactNode;
@@ -37,12 +36,12 @@ export default function ServiceCard({ icon, title, details, detailLink }: Servic
         ))}
       </div>
 
-      {/* Detail Link */}
+      {/* Detail Link with React Icon */}
       <a
         href={detailLink}
         className="inline-flex items-center gap-2 text-[#5567C2] hover:text-blue-700 text-sm font-medium transition-colors duration-200"
       >
-        <img src="/images/icons8-info-50 (1).png" alt="Detail Info" className="w-5 h-5" />
+        <FaInfoCircle className="w-5 h-5" />
         Learn more
       </a>
     </div>

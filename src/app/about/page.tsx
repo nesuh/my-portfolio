@@ -1,12 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaServer, FaRobot, FaFigma, FaReact, FaPython } from "react-icons/fa";
-import { SiNestjs, SiPostgresql, SiTailwindcss, SiOpenai, SiTensorflow, SiTypescript, SiJavascript, SiGit, SiDocker } from "react-icons/si";
+import { 
+  FaServer, FaRobot, FaFigma, FaReact, FaPython, FaDocker, FaGithub, FaServer as FaCiCd 
+} from "react-icons/fa";
+import { 
+  SiNestjs, SiPostgresql, SiTailwindcss, SiOpenai, SiTensorflow, SiTypescript, SiJavascript, SiGit 
+} from "react-icons/si";
 
 export default function AboutPage() {
   return (
-    <section className="max-w-5xl mx-auto px-6 py-16">
+    <section id="about" className="max-w-5xl mx-auto px-6 py-16">
+
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -45,9 +50,25 @@ export default function AboutPage() {
           I’ve created tools like custom chatbots and Slack integrations, applying real-world AI to improve workflows.
         </p>
 
+        {/* Icon Bar */}
+        <div className="flex justify-center space-x-8 py-6 text-4xl text-[#5567C2] dark:text-white">
+          <SiNestjs title="NestJS" />
+          <FaServer title="Node.js" />
+          <SiPostgresql title="PostgreSQL" />
+          <FaReact title="React" />
+          <SiTailwindcss title="Tailwind CSS" />
+          <FaFigma title="Figma" />
+          <FaPython title="Python" />
+          <SiTensorflow title="TensorFlow" />
+          <SiOpenai title="OpenAI" />
+          <FaDocker title="Docker" />
+          <SiGit title="Git" />
+          <FaGithub title="GitHub" />
+        </div>
+
         {/* AI Skills */}
         <div>
-          <h2 className="text-2xl font-semibold text-[#0B1DE6] mb-2">AI & Machine Learning Skills</h2>
+          <h2 className="text-2xl font-semibold text-[#5567C2] mb-2">AI & Machine Learning Skills</h2>
           <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm">
             <li className="flex items-center gap-2"><FaPython className="text-yellow-600" /> Python</li>
             <li className="flex items-center gap-2"><SiTensorflow className="text-orange-600" /> TensorFlow</li>
@@ -58,10 +79,9 @@ export default function AboutPage() {
 
         {/* DevOps Skills */}
         <div>
-          <h2 className="text-2xl font-semibold text-[#0B1DE6] mb-2">DevOps Skills</h2>
+          <h2 className="text-2xl font-semibold text-[#5567C2]mb-2">DevOps Skills</h2>
           <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm">
-            <li className="flex items-center gap-2"><SiDocker className="text-blue-500" /> Docker</li>
-            {/* <li className="flex items-center gap-2"><FaKubernetes className="text-blue-500" /> Kubernetes</li> */}
+            <li className="flex items-center gap-2"><FaDocker className="text-blue-500" /> Docker</li>
             <li className="flex items-center gap-2"><SiGit className="text-orange-600" /> Git</li>
             <li className="flex items-center gap-2"><FaServer className="text-gray-700" /> CI/CD</li>
           </ul>
@@ -69,7 +89,7 @@ export default function AboutPage() {
 
         {/* Technologies & Tools */}
         <div>
-          <h2 className="text-2xl font-semibold text-[#0B1DE6] mb-2">Technologies & Tools</h2>
+          <h2 className="text-2xl font-semibold text-[#5567C2] mb-2">Technologies & Tools</h2>
           <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm">
             <li className="flex items-center gap-2"><SiNestjs className="text-red-600" /> NestJS</li>
             <li className="flex items-center gap-2"><SiPostgresql className="text-blue-700" /> PostgreSQL</li>
@@ -77,7 +97,6 @@ export default function AboutPage() {
             <li className="flex items-center gap-2"><SiJavascript className="text-yellow-600" /> JavaScript</li>
           </ul>
         </div>
-
       </motion.div>
     </section>
   );

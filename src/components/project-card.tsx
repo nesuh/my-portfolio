@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import { FaGithub, FaInfoCircle } from "react-icons/fa";
 
 type ProjectCardProps = {
   title: string;
@@ -20,9 +22,11 @@ export default function ProjectCard({
       
       {imageUrl && (
         <div className="overflow-hidden rounded-lg mb-4">
-          <img
+          <Image
             src={imageUrl}
             alt={title}
+            width={300}
+            height={300}
             className="w-full h-48 object-cover transform transition-transform duration-500 hover:scale-105"
           />
         </div>
@@ -41,10 +45,7 @@ export default function ProjectCard({
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-[#5567C2] hover:bg-blue-700 text-white px-4 py-2 text-sm rounded-lg transition duration-300"
         >
-          <img
-            src="/images/icons8-github-48.png"
-            alt="GitHub"
-            className="w-5 h-5"
+          <FaGithub className="w-5 h-5" 
           />
           View on GitHub
         </Link>
@@ -54,11 +55,7 @@ export default function ProjectCard({
           href={detailLink}
           className="flex items-center gap-1 text-[#5567C2] hover:text-blue-700 transition duration-200"
         >
-          <img
-            src="/images/icons8-info-50 (1).png"
-            alt="Detail Info"
-            className="w-6 h-6"
-          />
+         <FaInfoCircle className="w-5 h-5" />
           <span className="text-sm">Details</span>
         </Link>
       </div>

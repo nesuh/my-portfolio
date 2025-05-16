@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
-import { SiTwitter, SiTelegram } from "react-icons/si";
+import { FaEnvelope, FaLinkedin, FaGithub ,FaTwitter, FaTelegram } from "react-icons/fa";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -25,7 +24,7 @@ export default function ContactPage() {
     setIsSubmitting(true);
     setFormStatus("");
 
-    // Simulate form submission (use your backend API to handle this in a real project)
+    // Simulate form submission (use your tbackend API o handle this in a real project)
     setTimeout(() => {
       setIsSubmitting(false);
       setFormStatus("Your message has been sent successfully!");
@@ -34,7 +33,7 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="max-w-5xl mx-auto px-6 py-16">
+    <section id="Contact" className="max-w-5xl mx-auto px-6 py-16">
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -60,7 +59,7 @@ export default function ContactPage() {
           <div className="flex items-center gap-3 text-lg">
             <FaEnvelope className="text-gray-700 dark:text-white" />
             <a href="mailto:your-email@example.com" className="text-[#5567C2] hover:text-blue-700">
-              your-email@example.com
+              antenhesileshi@gmail.com
             </a>
           </div>
 
@@ -79,7 +78,7 @@ export default function ContactPage() {
           <div className="flex items-center gap-3 text-lg">
             <FaGithub className="text-gray-700 dark:text-white" />
             <a
-              href="https://github.com/your-username"
+              href="https://github.com/nesuh"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#5567C2] hover:text-blue-700"
@@ -89,9 +88,9 @@ export default function ContactPage() {
           </div>
 
           <div className="flex items-center gap-3 text-lg">
-            <SiTwitter className="text-blue-400" />
+            <FaTwitter className="text-blue-400" />
             <a
-              href="https://twitter.com/your-username"
+              href="https://twitter.com/anta"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#5567C2] hover:text-blue-700"
@@ -101,9 +100,9 @@ export default function ContactPage() {
           </div>
 
           <div className="flex items-center gap-3 text-lg">
-            <SiTelegram className="text-blue-500" />
+            <FaTelegram className="text-blue-500" />
             <a
-              href="https://t.me/your-username"
+              href="https://t.me/Dengilmaryim"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#5567C2] hover:text-blue-700"

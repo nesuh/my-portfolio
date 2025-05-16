@@ -2,7 +2,7 @@ import ProjectCard from "@/components/project-card";
 
 export default function ProjectsPage() {
   return (
-    <section className="p-4">
+    <section  id="projects" className="max-w-5xl mx-auto px-6 py-16">
       <h1 className="text-6xl font-bold mb-10 text-[#5567C2] text-center">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <ProjectCard

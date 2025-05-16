@@ -19,7 +19,10 @@
     --foreground: #ededed;
   }
 }
-
+html {
+  @apply bg-white text-black transition-colors duration-300; 
+   scroll-behavior: smooth;/* Default light mode styles */
+}
 /* Apply variables based on the dark mode */
 body {
   background: var(--background);
