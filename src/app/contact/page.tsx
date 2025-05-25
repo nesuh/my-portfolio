@@ -66,7 +66,7 @@ export default function ContactPage() {
           <div className="flex items-center gap-3 text-lg">
             <FaLinkedin className="text-blue-600" />
             <a
-              href="https://www.linkedin.com/in/your-profile"
+              href="www.linkedin.com/in/antenhesileshi"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#5567C2] hover:text-blue-700"
