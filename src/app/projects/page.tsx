@@ -9,7 +9,7 @@ export default function ProjectsPage() {
           title="Todo List Manager"
           description="A task management tool that allows users to create, update, and track their tasks. It features a clean, user-friendly interface with task categorization and due date management."
           imageUrl="/assets/todo-list.jpg"
-          githubLink="https://github.com/nesuh/todo-list"
+          githubLink="https://github.com/nesuh/Daily-Task-Scheduler-with-Golang-vuejs-apollo"
           detailLink="/projects/todo-list-manager"
         />
         <ProjectCard
@@ -37,14 +37,14 @@ export default function ProjectsPage() {
           title="Music Management System"
           description="A music management platform for organizing tracks, playlists, and metadata efficiently. It supports audio preview, genre tagging, and artist cataloging."
           imageUrl="/assets/music-managment-system.jpg"
-          githubLink="https://github.com/yourusername/music-management"
+          githubLink="https://github.com/nesuh/music_app-react-nest"
           detailLink="/projects/music-management-system"
         />
         <ProjectCard
           title="GPT Assistant v2"
           description="An upgraded version of the GPT chatbot with smarter context handling and conversation memory."
           imageUrl="/assets/chat-gpt-image-assistance.jpg"
-          githubLink="https://github.com/yourusername/gpt-assistant-v2"
+          githubLink="https://github.com/nesuh/gpt-assistant-v2"
           detailLink="/projects/gpt-assistant-v2"
         />
       </div>
