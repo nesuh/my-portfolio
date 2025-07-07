@@ -65,6 +65,27 @@ const certificates = [
     image: "/certificates/ethio-coder.jpg",
     pdf: "/certificates/ethio-coder.pdf",
   },
+   {
+    icon: <FaCertificate className="text-yellow-500" />,
+    title: "Best Project Award - DMU",
+    provider: "Debre Markos University",
+    image: "/certificates/award-sertificate.jpg", 
+    pdf: "/certificates/award-sertificate.jpg", 
+  },
+    {
+    icon: <FaCertificate className="text-yellow-500" />,
+    title: "Recommendation Letter (Technical)",
+    provider: "DMU Department of Software Engineering",
+    image: "/certificates/recommendation-tech.jpg", 
+    pdf: "/certificates/recommendation-tech.jpg", // actual recommendation
+  },
+  {
+    icon: <FaCertificate className="text-yellow-500" />,
+    title: "English Proficiency Recommendation",
+    provider: "DMU English Department",
+    image: "/certificates/english-recommendation.jpg", // optional
+    pdf: "/certificates/english-recommendation.jpg",
+  }
 ];
 
 export default function SkillPage() {

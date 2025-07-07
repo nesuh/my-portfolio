@@ -54,7 +54,7 @@ export default function Navbar() {
           
           {/* Resume Button */}
           <a
-            href="/resume.pdf"
+            href="/certificates/resume.pdf"
             download
             className="px-4 py-2 bg-[#0B1DE6] text-white text-sm rounded-md hover:bg-blue-700 transition"
           >
